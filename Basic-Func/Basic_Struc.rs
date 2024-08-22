@@ -1,6 +1,10 @@
 fn main() {
-    println!("Hello, Rust from Cargo!");
+    println!("Hello, Rust from Rust!");
+    hello_world();
+    tell_height(13);
+}
 
+fn hello_world(){
     let x: i32 = -42;
     let y: u64 = 100;
     println!("Signed Integer :{}", x);
@@ -19,4 +23,13 @@ fn main() {
 
     let book_slices :&[&String] = &[&"IT".to_string(),&"Harry".to_string(),&"ZEN".to_string()];
     println!("Book SLices: {:?}", book_slices);
+
+    // Strings
+    let mut stone_cold: String = String::from("Hell, ");
+    stone_cold.push_str("Yeah!");
+    println!("Stone Cold Says: {}", stone_cold);
+}
+
+fn tell_height(height: i32){
+    println!("My height is {}", height);
 }
