@@ -12,5 +12,9 @@ fn main() {
     // destructed the tuple to x, y and z
     let (x, y, z) = tup;
     println!("The value of y is: {}", y);
+
+    let five = tup.0;
+    let six = tup.2;
+    println!("{} {}",five, six);
 }
 
